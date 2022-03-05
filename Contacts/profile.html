@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" type="image/x-icon" href="G:\Coding Projects\HTML\latency\gamers.png">
+</head>
+<body>
+    <div class="openChat">
+        <form>
+        <h1>Chat</h1>
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+        <button type="submit" class="primary">Send</button>
+        <button type="button" class="primary ghost" onclick="closeForm()">
+        Close
+        </button>
+        </form>
+    </div>
+    <div class="flip-card-front">
+        <span class="pro">Mecha</span>
+        <img class="round" src="mac.jpg" alt="user" style="width: 200px;height: 200px;">
+        <h3>Mac Ritz</h3>
+        <h6>Anonymous</h6>
+        <p>Penetration Tester <br/> Ethical Hacker</p>
+        <div class="buttons">
+            <button class="primary">
+                <a style="text-decoration: none;color: white;" href="tel:8847680164">Contact</a>
+            </button>
+            <button class="primary ghost" onclick="openForm()">Chat</button>
+
+        </div>
+        <div class="skills">
+            <h6>Skills</h6>
+            <ul>
+                <li>UI / UX</li>
+                <li>Bash Scripting</li>
+                <li>Python</li>
+                <li>C Lang</li>
+                <li>Operating Systems</li>
+                <li>C++</li>
+                <li>Kali</li>
+            </ul>
+        </div>
+    </div>
+    <div class="flip-card-front">
+        <span class="pro">PRO</span>
+        <img class="round" src="sasori.jpg" alt="user" style="width: 200px;height: 200px;">
+        <h3>Parth</h3>
+        <h6>Whip-Lash</h6>
+        <p>User interface designer and <br/> front-end developer</p>
+        <div class="buttons">
+            <button class="primary">
+                <a style="text-decoration: none;color: white;" href="tel:8847680164">Contact</a>
+            </button>
+            <button class="primary ghost" onclick="openForm()">Chat</button>
+
+        </div>
+        <div class="skills">
+            <h6>Skills</h6>
+            <ul>
+                <li>UI / UX</li>
+                <li>Front End Development</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+            </ul>
+        </div>
+    </div>
+    <div class="flip-card-front">
+        <span class="pro">PRO</span>
+        <img class="round" src="deidara.jpg" alt="user" style="width: 200px;height: 200px;">
+        <h3>Navyush</h3>
+        <h6>Bomb-Squad</h6>
+        <p>User interface designer and <br/> front-end developer</p>
+        <div class="buttons">
+            <button class="primary">
+                <a style="text-decoration: none;color: white;" href="tel:8847680164">Contact</a>
+            </button>
+            <button class="primary ghost" onclick="openForm()">Chat</button>
+
+        </div>
+        <div class="skills">
+            <h6>Skills</h6>
+            <ul>
+                <li>UI / UX</li>
+                <li>Front End Development</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="flip-card-front">
+        <span class="pro">PRO</span>
+        <img class="round" src="pain.jpg" alt="user" style="width: 200px;height: 200px;">
+        <h3>Naman</h3>
+        <h6>War-Horse</h6>
+        <p>User interface designer and <br/> front-end developer</p>
+        <div class="buttons">
+            <button class="primary">
+                <a style="text-decoration: none;color: white;" href="tel:8847680164">Contact</a>
+            </button>
+            <button class="primary ghost" onclick="openForm()">Chat</button>
+        </div>
+        <div class="skills">
+            <h6>Skills</h6>
+            <ul>
+                <li>UI / UX</li>
+                <li>Front End Development</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document .querySelector(".openChatBtn") .addEventListener("click", openForm);
+        document.querySelector(".close").addEventListener("click", closeForm);
+        function openForm() {
+            document.querySelector(".openChat").style.display = "block";
+        }
+        function closeForm() {
+            document.querySelector(".openChat").style.display = "none";
+        }
+    </script>
+</body>
+</html>
